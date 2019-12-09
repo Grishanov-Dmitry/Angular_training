@@ -1,0 +1,21 @@
+<div class="registration--wrapper">
+  <p appStylizedHeader>We are glad that you are here!</p>
+  <p>Please enter your data</p>
+
+  <form [formGroup]="profileForm" class="registration--form">
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName" autocomplete>
+      <p class="warning" *ngIf="isValidInput.firstName">Not valid name</p>
+    </label>
+    
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName" autocomplete>
+    </label>
+
+    <a routerLink="/main" routerLinkActive="active">
+      <button type="submit" (click)="onSubmit()">Create</button>
+    </a>
+  </form>
+</div>

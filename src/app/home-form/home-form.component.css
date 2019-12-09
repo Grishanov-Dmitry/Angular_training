@@ -1,0 +1,15 @@
+.home-form--wrapper {
+  width: 300px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin: 200px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.home-form--button {
+  width: 150px;
+  height: 30px;
+}
